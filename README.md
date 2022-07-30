@@ -1,1 +1,55 @@
-# metrics-webapp
+# Covid-19 Metrics
+An app to know worldwide total confirm cases of Covid-19.
+
+## Built With
+
+- HTML, CSS, Javascript
+- Webpack, Stylelint, ESlint, React JS, Redux, Router, Jest, Github Actions
+
+## Live Demo
+
+[https://covid19-matrics-nayankaran.netlify.app/](https://covid19-matrics-nayankaran.netlify.app/)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- Git
+- Code Editor. e.g., VS Code
+
+### Setup
+
+- Clone the repository using the `git clone` command.
+
+### Usage
+
+- `npm install`
+- `npm start`
+
+## Author
+
+👤 **Debabrata Mandal (Nayan Karan)**
+
+- GitHub: [@NayanKaran](https://github.com/NayanKaran)
+- Twitter: [@bapidebabrata](https://twitter.com/bapidebabrata)
+- LinkedIn: [@erdebabratamandal](https://www.linkedin.com/in/erdebabratamandal/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thanks to Microverse
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
