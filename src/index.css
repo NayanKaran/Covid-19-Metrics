@@ -68,11 +68,7 @@ code {
   font-size: 30px;
   letter-spacing: -1px;
   color: #fff;
-  font-family: "Gill Sans";
-}
-
-.continentListItem {
-  background-color: #ff5295;
+  font-family: "Gill Sans", sans-serif;
 }
 
 .searchBar {
@@ -112,6 +108,7 @@ code {
 }
 
 .continentListItem {
+  background-color: #ff5295;
   width: 50%;
   aspect-ratio: 1/1;
   display: flex;
