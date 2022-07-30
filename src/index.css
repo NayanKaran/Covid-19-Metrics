@@ -223,3 +223,13 @@ font-family: "Gill Sans", sans-serif;
   margin-left: auto;
   padding-right: 16px;
 }
+
+@media screen and (min-width: 768px){
+  .continentListItem {
+    width:25%;
+  }
+  .continentList > div {
+    background-color: #d14379;
+    border: 2px solid #ff5295;
+  }
+}
