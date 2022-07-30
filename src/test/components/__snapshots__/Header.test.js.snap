@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Header component Testing with snapshot 1`] = `
+<header
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#eb4c89",
+      "color": "white",
+      "display": "flex",
+      "height": "56px",
+    }
+  }
+>
+  <div
+    className="hidden"
+    onClick={[Function]}
+    onKeyUp={[Function]}
+    role="button"
+    style={
+      Object {
+        "padding": "0 8px",
+      }
+    }
+    tabIndex="0"
+  >
+    <i
+      className="fa-solid fa-angle-left"
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+    />
+  </div>
+  <span
+    style={
+      Object {
+        "fontSize": "24px",
+        "margin": "0 auto",
+        "paddingBottom": "4px",
+      }
+    }
+  >
+    global cases
+  </span>
+</header>
+`;
