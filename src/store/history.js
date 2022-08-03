@@ -1,16 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const slice = createSlice({
-  name: 'query',
-  initialState: '',
+  name: 'history',
+  initialState: '/',
   reducers: {
-    setQuery(query, action) {
+    setHistory(query, action) {
       /* eslint-disable no-param-reassign */
       return action.payload;
     },
   },
 });
 
-export const { setQuery } = slice.actions;
+export const { setHistory } = slice.actions;
 
 export default slice.reducer;

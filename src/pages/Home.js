@@ -3,14 +3,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCoronavirusDataFromAPI } from '../store/data';
-import { setQuery } from '../store/query';
+import { setQuery } from '../store/continentQuery';
 
 let apiCalled = false;
 
 const Home = () => {
   const data = useSelector((state) => state.entities.data);
-  const query = useSelector((state) => state.entities.query);
+  const query = useSelector((state) => state.entities.continentQuery);
   const dispatch = useDispatch();
+
   if (apiCalled === false && data === null) {
     apiCalled = true;
     dispatch(fetchCoronavirusDataFromAPI());
@@ -19,7 +20,7 @@ const Home = () => {
     const listItems = [];
 
     Object.keys(data.global).forEach((key) => {
-      if (key !== 'all' && key.toLowerCase().includes(query)) {
+      if (key !== 'all' && key.toLowerCase().includes(query.toLowerCase())) {
         listItems.push(
           <div
             key={key}
@@ -39,7 +40,7 @@ const Home = () => {
     });
 
     const handleQuery = (event) => {
-      dispatch(setQuery(event.target.value));
+      if (query !== event.target.value) dispatch(setQuery(event.target.value));
     };
 
     return (
@@ -57,7 +58,7 @@ const Home = () => {
           </div>
         </div>
         <div className="searchBar">
-          <input name="query" onChange={handleQuery} value={query} placeholder="Search continent" />
+          <input name="query" value={query} onChange={handleQuery} placeholder="Search continent" />
         </div>
         <div className="continentHeading">
           <h3>Continent breakdown</h3>
