@@ -1,8 +1,10 @@
 import { combineReducers } from '@reduxjs/toolkit';
 import dataReducer from './data';
-import queryReducer from './query';
+import continentQueryReducer from './continentQuery';
+import countryQueryReducer from './countryQuery';
 
 export default combineReducers({
   data: dataReducer,
-  query: queryReducer,
+  continentQuery: continentQueryReducer,
+  countryQuery: countryQueryReducer,
 });
